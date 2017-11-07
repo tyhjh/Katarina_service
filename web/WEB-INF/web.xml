@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>userInfo</servlet-name>
+        <servlet-class>servlet.UserInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userInfo</servlet-name>
+        <url-pattern>/api/userInfo</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>appVersion</servlet-name>
+        <servlet-class>servlet.AppUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>appVersion</servlet-name>
+        <url-pattern>/api/appVersion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>gif</servlet-name>
+        <servlet-class>servlet.Gif</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gif</servlet-name>
+        <url-pattern>/api/gif</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>putGif</servlet-name>
+        <servlet-class>servlet.PutGif</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>putGif</servlet-name>
+        <url-pattern>/api/putGif</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
